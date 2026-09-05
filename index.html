@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Olszewski | Data Scientist</title>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #61707d;
+      --paper: #f6f8f5;
+      --surface: #ffffff;
+      --accent: #0d7c66;
+      --accent-dark: #075545;
+      --line: #dce5df;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 1100px;
+      padding: 0 24px;
+    }
+
+    header {
+      align-items: center;
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 5%;
+    }
+
+    .logo {
+      color: var(--accent-dark);
+      font-size: 1.25rem;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    nav a {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: var(--accent-dark);
+      color: white;
+      padding: 110px 0 120px;
+    }
+
+    .eyebrow {
+      color: #a6daca;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: normal;
+      line-height: 0.95;
+      margin: 18px 0 26px;
+      max-width: 750px;
+    }
+
+    .hero p {
+      color: #d9efe7;
+      font-size: 1.2rem;
+      max-width: 560px;
+    }
+
+    section {
+      padding: 88px 0;
+    }
+
+    .section-heading {
+      color: var(--accent);
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 0.14em;
+      margin-bottom: 22px;
+      text-transform: uppercase;
+    }
+
+    .about-content {
+      display: grid;
+      gap: 48px;
+      grid-template-columns: 1fr 1.5fr;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      font-weight: normal;
+      line-height: 1.05;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 650px;
+    }
+
+    #skills {
+      background: #e7f0eb;
+    }
+
+    .skills-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skill {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      padding: 26px;
+    }
+
+    .skill h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .skill p {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: var(--ink);
+      color: #cad4d2;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+      }
+
+      .hero {
+        padding: 76px 0 84px;
+      }
+
+      section {
+        padding: 64px 0;
+      }
+
+      .about-content,
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#home">Daniel Olszewski</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="eyebrow">Data science portfolio</p>
+        <h1>Welcome, I’m Daniel Olszewski.</h1>
+        <p>I turn curious questions and complex data into useful, thoughtful insights.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-content">
+        <div>
+          <p class="section-heading">About Me</p>
+          <h2>Curious about the story behind the numbers.</h2>
+        </div>
+        <p>
+          I am a data science enthusiast who enjoys exploring patterns, building predictive models,
+          and communicating findings clearly. I’m always learning new ways to use data to solve
+          practical problems and support better decisions.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <p class="section-heading">Skills</p>
+        <h2>Tools for turning data into direction.</h2>
+        <div class="skills-grid" style="margin-top: 36px;">
+          <article class="skill">
+            <h3>Python & SQL</h3>
+            <p>Data wrangling, automation, querying, and reproducible analysis.</p>
+          </article>
+          <article class="skill">
+            <h3>Machine Learning</h3>
+            <p>Regression, classification, clustering, and model evaluation.</p>
+          </article>
+          <article class="skill">
+            <h3>Visualization</h3>
+            <p>Clear dashboards and visual stories with Matplotlib, Seaborn, or Tableau.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Daniel Olszewski. Built with curiosity.</p>
+  </footer>
+</body>
+</html>
