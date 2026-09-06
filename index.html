@@ -78,6 +78,26 @@
       padding: 110px 0 120px;
     }
 
+    .hero-content {
+      align-items: center;
+      display: grid;
+      gap: 64px;
+      grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+    }
+
+    .hero-photo {
+      aspect-ratio: 1;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .hero-photo img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
     .eyebrow {
       color: #e0a8f5;
       font-family: Arial, sans-serif;
@@ -185,6 +205,10 @@
         padding: 76px 0 84px;
       }
 
+      .hero-content {
+        grid-template-columns: 1fr;
+      }
+
       section {
         padding: 64px 0;
       }
@@ -210,10 +234,15 @@
 
   <main>
     <section class="hero" id="home">
-      <div class="container">
-        <p class="eyebrow">Data science portfolio</p>
-        <h1>Welcome, I’m Daniel Olszewski.</h1>
-        <p>I turn curious questions and complex data into useful, thoughtful insights.</p>
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">Data science portfolio</p>
+          <h1>Welcome, I’m Daniel Olszewski.</h1>
+          <p>I turn curious questions and complex data into useful, thoughtful insights.</p>
+        </div>
+        <figure class="hero-photo">
+          <img src="images/profile.jpg" alt="Daniel Olszewski working with data">
+        </figure>
       </div>
     </section>
 
